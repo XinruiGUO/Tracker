@@ -1,0 +1,41 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+ext {
+    springBootVersion = '2.0.3.RELEASE'
+
+    //Development
+    springBootStarterDependency = "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+
+
+    domainDependencies = [
+
+    ]
+
+    domainTestDependencies = [
+    ]
+
+    applicationDependencies = [
+
+    ]
+
+    applicationTestDependencies = [
+    ]
+
+    infraDependencies = [
+    ]
+
+    infraTestDependencies = [
+    ]
+
+    webServicesDependencies = [
+            springBootStarter: springBootStarterDependency,
+            springBootStarterWebFlux: "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}",
+    ]
+
+    webServicesTestDependencies = [
+    ]
+}
